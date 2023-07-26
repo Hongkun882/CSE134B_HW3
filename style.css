@@ -21,13 +21,10 @@ header{
 h1{
     text-align: center;
 }
-nav{
-    display: flex;
-    list-style: none;
-}
 
-li{
-    margin: 10px;
+
+li.nav{
+    margin: 2vw;
 }
 
 body{
@@ -42,13 +39,12 @@ body{
     
 }
 
-nav{
+ul.nav{
     background-color: rgb(192, 219, 242);
-    
-}
-
-div.nav_container{
+    list-style: none;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 p.introduction{
     
@@ -58,12 +54,33 @@ p.introduction{
     transition-duration: 1s;
 }
 p.introduction:hover{
-    transform: rotate(45deg);
+    transform: rotate(10deg);
     background-color: aliceblue;
 }
 
 img{
-    height: 50vh;
-    width: 50vh;
+    
     filter: contrast(1.25);
+}
+
+
+@media(min-width: 500px) {
+    img{
+        width: 250px;
+        height: 250px
+    }
+}
+
+@media(max-width: 500px) {
+    img{
+        width: 100px;
+        height: 100px
+    }
+}
+
+@media(max-width: 150px) {
+    img{
+        width: 50px;
+        height: 50px
+    }
 }
