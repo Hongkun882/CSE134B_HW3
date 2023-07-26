@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav><a href="#">Contact</a></nav>
+    <nav>
+        <div class="nav_container">
 
-    <header>This is the header of this page</header>
+          <li class="first"><a href="#intro">Contact</a></li>
+          <li class="second"><a href="#bio">Bio</a></li>
+          <li><a href="#project">Project</a></li>
+        </div>
+        
+      
+      
+    
+    </nav>
+
+    <header>my personal page</header>
     <main>
       <h1>HomePage</h1>
 
-      <section class="intro">
+      <section class="intro" id="intro">
         <h2>Introduction</h2>
 
         <div class="intro_container">
@@ -27,7 +38,7 @@
           
 
           <p class="introduction">
-            Hello, My name is Hongkun Guan, CS major in UCSD
+            Hello, My name is Hongkun Guan, CS major in UCSD. Looking for new challenges in web development.
             
           </p>
 
@@ -39,13 +50,14 @@
                 <li>HTML</li>
                 <li>Python</li>
                 <li>C++</li>
+                <li>PostgreSql</li>
             </ul>
           </div>
           
         </div>
       </section>
       <hr>
-      <section class="bio">
+      <section class="bio" id="bio">
         <h2>Bio</h2>
         <p class="bio">
           Lorem, ipsum dolor <strong>sit amet consectetur </strong>adipisicing
@@ -64,16 +76,18 @@
       </section>
 
       <hr>
-      <section class="project">
+      <section class="project" id="project">
         <h2>Project</h2>
         <div class="project_des">
-            <h3>Project name</h3>
-            <a href="#">project_link</a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora similique assumenda nesciunt eveniet perspiciatis provident numquam ex, distinctio temporibus nemo dicta nisi animi voluptatum eaque, at voluptate, ratione dolorum!</p>
-        
-            <h3>Project name</h3>
-            <a href="#">project_link</a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora similique assumenda nesciunt eveniet perspiciatis provident numquam ex, distinctio temporibus nemo dicta nisi animi voluptatum eaque, at voluptate, ratione dolorum!</p>
+            <h3>My Journal</h3>
+            <a href="#project">project_link</a>
+            <p>Basic CRUD project using HTML,CSS, and Javascript. Developed with 8 people in Agile development.</p>
+
+            <h3>TritonLink</h3>
+            <a href="#project">project_link</a>
+            <p>A Basic class enrollment Project using JSP, Apache Tomcat, and PostgreSql. Users are able to 
+              add their students and enroll classes.
+            </p>
           </div>
         
       </section>

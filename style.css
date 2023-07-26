@@ -14,10 +14,25 @@
     src: local("Arial");
 }
 
+header{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+nav{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    margin: 10px;
+}
 
 body{
     background-color: var(--background_color);
-    
+    font-family: 'Open Sans', "fallback" , sans-serif;
 }
 
 .intro_container{
@@ -29,6 +44,11 @@ body{
 
 nav{
     background-color: rgb(192, 219, 242);
+    
+}
+
+div.nav_container{
+    display: flex;
 }
 p.introduction{
     
@@ -38,15 +58,12 @@ p.introduction{
     transition-duration: 1s;
 }
 p.introduction:hover{
-    transform: translateX(100%) rotate(45deg);
+    transform: rotate(45deg);
     background-color: aliceblue;
 }
 
-p.bio{
-    font-family: 'Open Sans', "fallback" , sans-serif;
-    
-}
 img{
     height: 50vh;
     width: 50vh;
+    filter: contrast(1.25);
 }
