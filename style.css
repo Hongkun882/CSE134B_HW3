@@ -1,0 +1,30 @@
+:root{
+    --background_color: rgb(225, 187, 193);
+    --intro_color: rgb(73, 57, 191);
+}
+
+body{
+    background-color: var(--background_color);
+    
+}
+
+.intro_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+p.introduction{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style: solid;
+    margin: 10px ;
+    transition: all 1s;
+}
+p.introduction:hover{
+    transform: translateX(100%);
+}
+
+img{
+    height: 50vh;
+    width: 50vh;
+}
