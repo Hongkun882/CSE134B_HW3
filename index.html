@@ -17,7 +17,14 @@
         <h2>Introduction</h2>
 
         <div class="intro_container">
-          <img src="picture.png" alt="The picture of myself" />
+
+          <picture>
+
+            <source media="(min-width: 1000px )" srcset="other_picture.png" type="image/png">
+            <source media="(min-width: 500px )" srcset="pic1.png" type="image/png">
+            <img src="picture.png" alt="The picture of myself" />
+          </picture>
+          
 
           <p class="introduction">
             Hello, My name is Hongkun Guan, CS major in UCSD
@@ -40,14 +47,14 @@
       <hr>
       <section class="bio">
         <h2>Bio</h2>
-        <p>
+        <p class="bio">
           Lorem, ipsum dolor <strong>sit amet consectetur </strong>adipisicing
           elit. Nam soluta iure impedit tenetur adipisci qui quaerat quae vitae
           saepe facere! Commodi <em>laborum a ipsa possimus amet</em>, excepturi
           praesentium nostrum assumenda.
         </p>
 
-        <p>
+        <p class="bio">
           Lorem <span>ipsum dolor</span> sit, amet consectetur adipisicing elit.
           Maiores placeat cupiditate <br />
           temporibus eos dignissimos quo aut
@@ -61,9 +68,13 @@
         <h2>Project</h2>
         <div class="project_des">
             <h3>Project name</h3>
-            <a href=""></a>
+            <a href="#">project_link</a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora similique assumenda nesciunt eveniet perspiciatis provident numquam ex, distinctio temporibus nemo dicta nisi animi voluptatum eaque, at voluptate, ratione dolorum!</p>
-        </div>
+        
+            <h3>Project name</h3>
+            <a href="#">project_link</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora similique assumenda nesciunt eveniet perspiciatis provident numquam ex, distinctio temporibus nemo dicta nisi animi voluptatum eaque, at voluptate, ratione dolorum!</p>
+          </div>
         
       </section>
     </main>

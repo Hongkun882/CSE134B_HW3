@@ -1,7 +1,19 @@
+
 :root{
-    --background_color: rgb(225, 187, 193);
+    --background_color: rgb(253, 241, 243);
     --intro_color: rgb(73, 57, 191);
 }
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Tektur&display=swap');
+}
+
+@font-face {
+    font-family: "fallback";
+    src: local("Arial");
+}
+
 
 body{
     background-color: var(--background_color);
@@ -14,16 +26,26 @@ body{
     flex-wrap: wrap;
     
 }
+
+nav{
+    background-color: rgb(192, 219, 242);
+}
 p.introduction{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     border-style: solid;
     margin: 10px ;
-    transition: all 1s;
+    transition: all;
+    transition-duration: 1s;
 }
 p.introduction:hover{
-    transform: translateX(100%);
+    transform: translateX(100%) rotate(45deg);
+    background-color: aliceblue;
 }
 
+p.bio{
+    font-family: 'Open Sans', "fallback" , sans-serif;
+    
+}
 img{
     height: 50vh;
     width: 50vh;
